@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    color: #545454;
+    display: flex;
+    font-family: sans-serif;
+    justify-content: center;
+  }
+  
+  .myContainer {
+    background: #14BDAC;
+    margin: 10px;
+    padding: 30px;
+    border-radius: 5px;
+  }
+  
+  .title {
+    text-align: center;
+  }
+  
+  .title span {
+    color: #F2EBD3;
+  }
+  
+  .status-action {
+    /* display: flex; */
+    margin-top: 5px;
+    font-size: 20px;
+    text-align: center;
+    justify-content: space-around;
+  } 
+  
+   .status span {
+    color: #F2EBD3;
+  }
+  
+  .reset {
+    cursor: pointer;
+  }
+  
+  .reset:hover {
+    color: #F2EBD3;
+  }
+  
+  .game-grid {
+    background: #0DA192;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 15px;
+    margin-top: 50px;
+  }
+  
+  .game-cell {
+    background: #14BDAC;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    height: 200px;
+    width: 200px;
+  }
+
+  .player-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 5px;
+    column-gap: -5px;
+    margin-top: 10px;
+  }
+
+  .player-cell {   
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+  }
+
+  .currentSelected{
+          /* text-shadow: 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black; */
+          border: 3px solid rgb(209, 209, 209);
+          border-radius: 50%;
+    }
+  
+    #center{
+        text-align: center;
+    }
+
+
+
+  /* .player-cell.small{
+    height: 40px;
+    width: 40px;
+    content: ' \25CF';
+    font-size: 40px;
+
+    position: relative;
+    top: -12%;
+  }
+  
+  .player-cell.medium{
+
+    height: 40px;
+    width: 40px;
+    content: ' \25CF';
+    font-size: 60px;
+    position: relative;
+    top: -12%;
+  }
+  
+  .player-cell.large::after{
+    content: ' \25CF';
+    font-size: 80px;
+    position: relative;
+    top: -12%;
+  } */
+
+  /* .redP::after {
+
+    content: ' \25CF';
+    color: #AF1C0E;
+    font-size: 160px;
+    position: relative;
+    top: -10%;
+       /* content: '○';
+    color: red; 
+    fill:red;
+    font-size: 160px; 
+  }
+  
+  .blueP::after {
+    content: ' \25CF';
+    color: #4573c8;
+    font-size: 160px;
+    position: relative;
+    top: -10%;
+  } */
+  
+  .won{
+    background-color: #0DA192;
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    .game-grid {
+      margin-top: 25px;
+      grid-gap: 10px;
+    }
+  
+    .game-cell {
+      height: 150px;
+      width: 150px;
+    }
+  }
+  
+  @media only screen and (max-width: 540px) {
+    .myContainer {
+      margin: 25px;
+      padding: 25px;
+    }
+  
+    .game-cell {
+      height: 130px;
+      width: 130px;
+    }
+  }
+  

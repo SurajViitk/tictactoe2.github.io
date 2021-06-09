@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Tic Tac Toe</title>
+</head>
+<body>
+  <div class="myContainer">
+    <div class="row">
+      <h1 class="title">Tic <span>Tac</span> Toe 2.0</h1>
+    </div>
+    <div class="status-action">
+      <div class="row">
+        <div class="status col">Red is next</div>
+        <div class="col reset">
+          <button type="button" class="btn btn-secondary">Reset</button>
+        </div>
+      </div>
+    </div>
+    <div class ="row">
+
+      <div class = "col">
+        <div id="center" style="color: red;">
+          Red Player
+        </div>
+        <div class="player-grid">
+            <div class="player-cell small"><img src="asset/redCircle.png" height=50% width=50%></div>
+            <div class="player-cell medium"><img src="asset/redCircle.png" height=70% width=70%></div>
+            <div class="player-cell large"><img src="asset/redCircle.png" height=100% width=100%></div>
+            <div class="player-cell small"><img src="asset/redCircle.png" height=50% width=50%></div>
+            <div class="player-cell medium"><img src="asset/redCircle.png" height=70% width=70%></div>
+            <div class="player-cell large"><img src="asset/redCircle.png" height=100% width=100%></div>
+        </div>
+      </div>  
+      <div class = "col" style=" color: blue">
+        <div id="center">
+          Blue Player
+        </div>
+        <div class="player-grid">
+          <div class="player-cell small"><img src="asset/blueCircle.png" height=50% width=50%></div>
+          <div class="player-cell medium"><img src="asset/blueCircle.png" height=70% width=70%></div>
+          <div class="player-cell large"><img src="asset/blueCircle.png" height=100% width=100%></div>
+          <div class="player-cell small"><img src="asset/blueCircle.png" height=50% width=50%></div>
+          <div class="player-cell medium"><img src="asset/blueCircle.png" height=70% width=70%></div>
+          <div class="player-cell large"><img src="asset/blueCircle.png" height=100% width=100%></div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="game-grid">
+      <div class="game-cell"></div>
+      <div class="game-cell"></div>
+      <div class="game-cell"></div>
+      <div class="game-cell"></div>
+      <div class="game-cell"></div>
+      <div class="game-cell"></div>
+      <div class="game-cell"></div>
+      <div class="game-cell"></div>
+      <div class="game-cell"></div>
+    </div> 
+  </div>
+  <script src="app2.js"></script>
+</body>
+</html>
